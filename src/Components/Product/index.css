@@ -1,0 +1,73 @@
+.list {
+  width: 280px;
+  height: 400px;
+  background-color: rgba(20, 20, 20, 1);
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  position: relative;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .list {
+    width: 230px;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 380px;
+  margin-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.bookmark-icon {
+  width: 26px;
+  height: 34px;
+  color: rgba(12, 12, 12, 1);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.product-name {
+  font-family: "Encode Sans";
+  font-size: 20px;
+  color: rgba(229, 223, 217, 1);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.price-container {
+  display: flex;
+  align-self: center;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-text {
+  font-family: "Encode Sans";
+  font-size: 18px;
+  color: rgba(229, 223, 217, 1);
+}
+
+.bag-icon {
+  width: 26px;
+  height: 40px;
+  color: rgba(229, 223, 217, 1);
+  cursor: pointer;
+}
+
+.bag-icon-succes {
+  width: 26px;
+  height: 40px;
+  color: #5cb85c;
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.navbar {
+  background-color: rgba(12, 12, 12, 1);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-family: Comme;
+  font-size: 20px;
+  color: rgba(229, 223, 217, 1);
+  letter-spacing: 5px;
+}
+
+@media (max-width: 575px) {
+  .logo {
+    font-size: 12px;
+  }
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  width: 24px;
+  height: 24px;
+  color: rgba(229, 223, 217, 1);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 575px) {
+  .icons {
+    width: 15px;
+    height: 15px;
+  }
+}

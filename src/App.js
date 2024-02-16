@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Home from "./Components/Home";
+import CartCount from "./Components/Context/";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [productsCountInCart, setProductsCountInCart] = useState([]);
+
+  const addProductsIntoCart = (id) => {
+    if (!productsCountInCart.includes(id)) {
+      setProductsCountInCart((privews) => [...privews, id]);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartCount.Provider
+      value={{ productsCountInCart, addProductsIntoCart: addProductsIntoCart }}
+    >
+      <Home />
+    </CartCount.Provider>
   );
-}
+};
 
 export default App;
